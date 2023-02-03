@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: #a0c5f9;
+    padding: 30px 88px 30px 88px;
+    color: white;
+    /*flex*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-links{
+    /*flex*/
+    display: flex;
+    column-gap: 20px;
+}
+/*contenedor de la informacion, abajo del header*/
+.info-container{
+    width: 80%;
+    margin: auto;
+    border-bottom:2px solid black;
+    padding: 15px;
+    /*flex*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*contenedor de seleccion de temepratura*/
+.info-temperature{
+    /*flex*/
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+/*select de temperatura*/
+.info-temperature > select {
+    border: 2px solid black;
+    height: 30px;
+}
+/*contenedor de los dias de semana*/
+
+.week-container{
+    padding-top: 30px;
+    margin: auto;
+    width: 83%;
+    overflow: hidden;
+    /*grid*/
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 25px;
+
+}
+.day{
+    width: 170px;
+    height: 300px;
+    padding-top: 20px;
+    background-color: #eeeeee;
+}
+.day-img{
+    width: 150px;
+    border-radius: 50%;
+}
+.day-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+.temp{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+.temp > p{
+    font-size: 20px;
+    font-weight: 700;
+}
+.temp > p:first-child{
+    color: red;
+}
+.temp > p:nth-child(2){
+    color: blue;
+}
+
+.cookie-container{
+    width: 80%;
+    padding: 15px;
+    margin: auto;
+    margin-top: 10px;
+    border: 3px solid black;
+    background-color: #eeeeee;
+    height: 100px;
+    /*flex*/
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.cookie-container > button{
+    background-color: #a0c5f9;
+    width: 240px;
+    height: 40px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>DojoWeather</h1>
+        <!--Nav links-->
+        <div class="header-links">
+            <h2  onclick="showAlert()">Burbank</h2>
+            <h2  onclick="showAlert()">Chicago</h2>
+            <h2  onclick="showAlert()">Dallas</h2>
+        </div>
+    </header>
+    <!-- Website Container-->
+    <div class="container">
+        <!--Info-->
+        <div class="info-container ">
+            <h2>San Jose</h2>
+            <div class="info-temperature">
+                <p>show temperture in</p>
+                <select id="selectBox" onchange="changeTemp()">
+                    <option value="c">°C</option>
+                    <option value="f">°F</option>
+                </select>
+            </div>
+        </div>
+        <!--Weekdays Container-->
+        <div class="week-container">
+            <div class="day">
+                <div class="day-info">
+                    <p>Today</p>
+                    <img class="day-img" src="./assets/some_rain.png"/>
+                    <p>some rain</p>
+                </div>
+                <div class="temp">
+                    <p>24°</p>
+                    <p>18°</p>
+                </div>
+            </div>
+            <div class="day">
+                <div class="day-info">
+                    <p>Tomorrow</p>
+                    <img class="day-img" src="./assets/some_sun.png"/>
+                    <p>some sun</p>
+                </div>
+                <div class="temp">
+                    <p>24°</p>
+                    <p>18°</p>
+                </div>
+            </div>
+            <div class="day">
+                <div class="day-info">
+                    <p>Friday</p>
+                    <img class="day-img" src="./assets/some_clouds.png"/>
+                    <p>some clouds</p>
+                </div>
+                <div class="temp">
+                    <p>24°</p>
+                    <p>18°</p>
+                </div>
+            </div>
+            <div class="day">
+                <div class="day-info">
+                    <p>Saturday</p>
+                    <img class="day-img" src="./assets/some_sun.png"/>
+                    <p>some sun</p>
+                </div>
+                <div class="temp">
+                    <p>24°</p>
+                    <p>18°</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Cookie container-->
+        <div class="cookie-container" id="cookie">
+            <img src="/assets/cookie.png"/>
+            <div>
+                <h2>stop!! cookie time</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolores illo totam ea dicta placeat voluptas corrupti necessitatibus tempora, eveniet eum voluptatem, esse eaque voluptatibus voluptate a ex earum exercitationem!</p>
+            </div>
+            <button onclick="dismissCookies()">I Accept</button>
+        </div>
+
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
